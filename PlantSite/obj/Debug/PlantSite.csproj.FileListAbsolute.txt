@@ -1,0 +1,4 @@
+c:\users\user1\documents\visual studio 2010\Projects\PlantSite\PlantSite\bin\PlantSite.dll
+c:\users\user1\documents\visual studio 2010\Projects\PlantSite\PlantSite\bin\PlantSite.pdb
+c:\users\user1\documents\visual studio 2010\Projects\PlantSite\PlantSite\obj\Debug\PlantSite.dll
+c:\users\user1\documents\visual studio 2010\Projects\PlantSite\PlantSite\obj\Debug\PlantSite.pdb
