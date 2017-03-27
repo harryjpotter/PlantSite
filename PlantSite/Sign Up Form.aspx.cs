@@ -16,17 +16,21 @@ namespace PlantSite
             {
                 // Insert the data
                 string fullName = Request.Form["FullName"];
+                string Username = Request.Form["Username"];
+                string Password = Request.Form["Password"];
+                string Email = Request.Form["Email"];
+                string Phone = Request.Form["Phone"];
 
-                string connetionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=\"|DataDirectory|\\Database.mdf\";Integrated Security=True;User Instance=True";
-                SqlConnection connection = new SqlConnection(connetionString);
+                SqlConnection connection = new SqlConnection(DatabaseConnection.ConnectionString);
                 connection.Open();
                 SqlCommand command = connection.CreateCommand();
-                command.CommandText = String.Format("INSERT INTO Users (FullName) VALUES ({0});", fullName);
-                command.ExecuteNonQuery();
-
+                //command.CommandText = String.Format("INSERT INTO Users (FullName, Username, Password, Email, Phone) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}');", fullName, Username, Password, Email, Phone);
+                //command.ExecuteNonQuery();
+                /*command.CommandText = "DELETE FROM Users";
+                command.ExecuteNonQuery(); */
                 connection.Close();
 
-                //Response.Redirect("home.aspx");
+                Response.Redirect("Home Page.aspx");
             }
         }
     }

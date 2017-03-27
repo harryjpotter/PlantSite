@@ -20,7 +20,7 @@
 <body>
  <div class="container">
     <form id="signup" runat="server">
-        <h1 > Sign Up <%= something %> </h1> <br/>
+        <h1 > Sign Up </h1> <br/>
             Full Name:
             <br/> <br/>
             <div class="form-group">

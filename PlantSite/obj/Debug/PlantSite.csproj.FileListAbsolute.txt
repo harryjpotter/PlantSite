@@ -2,3 +2,7 @@ c:\users\user1\documents\visual studio 2010\Projects\PlantSite\PlantSite\bin\Pla
 c:\users\user1\documents\visual studio 2010\Projects\PlantSite\PlantSite\bin\PlantSite.pdb
 c:\users\user1\documents\visual studio 2010\Projects\PlantSite\PlantSite\obj\Debug\PlantSite.dll
 c:\users\user1\documents\visual studio 2010\Projects\PlantSite\PlantSite\obj\Debug\PlantSite.pdb
+C:\Users\user1\Documents\GitHub\PlantSite\PlantSite\bin\PlantSite.dll
+C:\Users\user1\Documents\GitHub\PlantSite\PlantSite\bin\PlantSite.pdb
+C:\Users\user1\Documents\GitHub\PlantSite\PlantSite\obj\Debug\PlantSite.dll
+C:\Users\user1\Documents\GitHub\PlantSite\PlantSite\obj\Debug\PlantSite.pdb
