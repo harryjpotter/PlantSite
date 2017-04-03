@@ -6,3 +6,9 @@ C:\Users\user1\Documents\GitHub\PlantSite\PlantSite\bin\PlantSite.dll
 C:\Users\user1\Documents\GitHub\PlantSite\PlantSite\bin\PlantSite.pdb
 C:\Users\user1\Documents\GitHub\PlantSite\PlantSite\obj\Debug\PlantSite.dll
 C:\Users\user1\Documents\GitHub\PlantSite\PlantSite\obj\Debug\PlantSite.pdb
+C:\Users\rotem_000\Documents\GitHub\PlantSite\PlantSite\bin\PlantSite.dll.config
+C:\Users\rotem_000\Documents\GitHub\PlantSite\PlantSite\bin\PlantSite.dll
+C:\Users\rotem_000\Documents\GitHub\PlantSite\PlantSite\bin\PlantSite.pdb
+C:\Users\rotem_000\Documents\GitHub\PlantSite\PlantSite\obj\Debug\PlantSite.csprojResolveAssemblyReference.cache
+C:\Users\rotem_000\Documents\GitHub\PlantSite\PlantSite\obj\Debug\PlantSite.dll
+C:\Users\rotem_000\Documents\GitHub\PlantSite\PlantSite\obj\Debug\PlantSite.pdb

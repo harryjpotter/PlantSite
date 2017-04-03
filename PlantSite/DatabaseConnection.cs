@@ -7,7 +7,10 @@ namespace PlantSite
 {
     public class DatabaseConnection
     {
-        public static string ConnectionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=\"|DataDirectory|\\Database.mdf\";Integrated Security=True;User Instance=True";
-        //public static string ConnectionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=\"|DataDirectory|\\DatabaseHome.mdf\";Integrated Security=True;User Instance=True";
+        //school
+        //public static string ConnectionString = "Data Source=.\\SQLEXPRESS;AttachDbFilename=\"|DataDirectory|\\Database.mdf\";Integrated Security=True;User Instance=True";
+        
+        //home
+        public static string ConnectionString = "Data Source = (LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\rotem_000\\Documents\\GitHub\\PlantSite\\PlantSite\\App_Data\\Database.mdf;Integrated Security = True; Connect Timeout = 30";
     }
 }

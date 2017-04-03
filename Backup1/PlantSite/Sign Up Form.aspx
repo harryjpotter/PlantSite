@@ -16,9 +16,6 @@
 
     <!-- Bootstrap - something for smartphones-->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <script src="Main.js"></script>
-
    </head>
 <body>
  <div class="container">

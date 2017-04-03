@@ -11,7 +11,6 @@
     <div>
     <h1>Plant Site!</h1> <br/>
     <a href="Sign Up Form.aspx"> Sign Up </a>
-    <a href="Sign In.aspx"> Sign In </a>
     </div>
     </form>
 </body>
