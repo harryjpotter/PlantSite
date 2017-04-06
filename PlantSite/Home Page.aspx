@@ -10,7 +10,9 @@
     <form id="form1" runat="server">
     <div>
     <h1>Plant Site!</h1> <br/>
-    <a href="Sign Up Form.aspx"> Sign Up </a>
+    <%=hello%>
+    <br />
+    <a href="Sign Up Form.aspx"> Sign Up </a> <br />
     <a href="Sign In.aspx"> Sign In </a>
     </div>
     </form>

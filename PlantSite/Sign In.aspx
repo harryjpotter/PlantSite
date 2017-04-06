@@ -17,7 +17,6 @@
 
     <!-- Bootstrap - something for smartphones-->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
 </head>
 <body>
  <div class="container">
@@ -30,10 +29,13 @@
              Enter Password
             </div>
             <div class="form-group">
-            <input class="form-control" placeholder="Enter your password" type="text" name="password" id="password"/> <br/> <br/>
+            <input class="form-control" placeholder="Enter your password" type="text" name="password" id="password"/>
             <br/>
             </div>
+        <%=message%>
+        <br /> <input type="submit" class="btn btn-primary" id="submit" value="sign in" /> <br />
+        <a href="Home Page.aspx"> back </a>
     </form>
-</div>
+</div> <br />
 </body>
 </html>

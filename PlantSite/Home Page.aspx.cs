@@ -9,9 +9,17 @@ namespace PlantSite
 {
     public partial class Home_Page : System.Web.UI.Page
     {
+        public string hello = "";
         protected void Page_Load(object sender, EventArgs e)
         {
-
+           if(Session["id"]!= null)
+            {
+                hello = String.Format("Hello {0}", Session["username"]);
+            }
+           else
+            {
+                hello = "Hello guest";
+            }
         }
     }
 }

@@ -4,10 +4,15 @@
         && is_email()
         && is_password_confirmed()
         && is_phone()
-        )
+        ) {
         alert("you have signed in");
-    else
-        alert("check your details again !")
+        return true;
+    }
+
+    else {
+        alert("check your details again !");
+        return false;
+    }
 }
 
 function is_terms() {
