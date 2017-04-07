@@ -21,8 +21,8 @@ namespace PlantSite
                 SqlConnection connection = new SqlConnection(DatabaseConnection.ConnectionString);
                 connection.Open();
                 SqlCommand command = connection.CreateCommand();
-                command.CommandText = "SELECT * WHERE Username = '" + Username + "';";
-                SqlDataReader reader = command.ExecuteReader();
+                command.CommandText = string.Format("SELECT * FROM Users WHERE Username = '{0}';", Username);
+                SqlDataReader reader = command.ExecuteReader();               
                 if (reader.Read())
                 {
                     if (reader.GetString(3) == Password)

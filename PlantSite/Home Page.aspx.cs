@@ -14,7 +14,7 @@ namespace PlantSite
         {
            if(Session["id"]!= null)
             {
-                hello = String.Format("Hello {0}", Session["username"]);
+                hello = String.Format("Hello {0}", Session["name"]);
             }
            else
             {

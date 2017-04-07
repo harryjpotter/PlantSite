@@ -30,7 +30,7 @@ namespace PlantSite
                 {
                     int id = (int)command.ExecuteScalar();
                     Session["id"] = id;
-                    Session["username"] = Username;
+                    Session["name"] = fullName;
                     Response.Redirect("Home Page.aspx");
                 }
                 catch (SqlException)
