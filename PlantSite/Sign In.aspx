@@ -34,9 +34,9 @@
 	<!-- end #header -->
 	<div id="menu">
 		<ul>
-			<li class="current_page_item"><a href="#">Home</a></li>
-			<li><a href="#">Sign Up</a></li>
-			<li><a href="#">Photos</a></li>
+			<li class="current_page_item"><a href="Home Page.aspx">Home</a></li>
+			<li><a href="Sign Up Form.aspx">Sign Up</a></li>
+			<li><a href="Sign In.aspx">Sign In</a></li>
 			<li><a href="#">About</a></li>
 			<li><a href="#">Links</a></li>
 			<li><a href="#">Contact</a></li>
@@ -57,8 +57,7 @@
             </div>
         <%=message%>
         <br /> <input type="submit" class="btn btn-primary" id="submit" value="sign in" /> <br />
-        <a href="Home Page.aspx"> back </a>
-    </form></form>
+    </form>
 	</div>
 </div>
 <div id="footer">
