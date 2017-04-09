@@ -70,6 +70,7 @@
     <Content Include="Main.js" />
     <Content Include="Sign In.aspx" />
     <Content Include="Sign Up Form.aspx" />
+    <Content Include="Style.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

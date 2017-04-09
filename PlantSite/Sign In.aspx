@@ -4,8 +4,6 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Sign In</title>
-
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
 
@@ -17,8 +15,33 @@
 
     <!-- Bootstrap - something for smartphones-->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>The Plant Site</title>
+<link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+
 </head>
 <body>
+    <div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1><a href="#">The Plant Site</a> / <span>by Naama & Rotem</span></h1>
+		</div>
+	</div>
+	<!-- end #header -->
+	<div id="menu">
+		<ul>
+			<li class="current_page_item"><a href="#">Home</a></li>
+			<li><a href="#">Sign Up</a></li>
+			<li><a href="#">Photos</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Links</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</div>
  <div class="container">
     <form id="signin" runat="server">
         <h1 > Sign In </h1> <br/>
@@ -35,7 +58,9 @@
         <%=message%>
         <br /> <input type="submit" class="btn btn-primary" id="submit" value="sign in" /> <br />
         <a href="Home Page.aspx"> back </a>
-    </form>
-</div> <br />
-</body>
-</html>
+    </form></form>
+	</div>
+</div>
+<div id="footer">
+</div>
+<!-- end #footer -->
