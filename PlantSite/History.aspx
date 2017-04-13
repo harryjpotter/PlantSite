@@ -47,7 +47,7 @@
 	<!-- end #menu -->
  <div class="container">
     <form id="signup" runat="server" onsubmit="return verify()">
-        <h1 > Sign Up </h1> <br/>
+        <h1 > Changing Nominal Data </h1> <br/>
             Full Name:
             <br/> <br/>
             <div class="form-group">
@@ -55,7 +55,7 @@
             </div>
             <div class="form-group">
             <input class="form-control" placeholder="Enter username" type="text" name="Username" id="Username"/> <br/>
-            <div style="color: red;"> <%=errorMessage%> </div> <br />
+            <div style="color: red;"> </div> <br />
             Password
             <br/>
             </div>

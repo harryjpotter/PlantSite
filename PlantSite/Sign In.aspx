@@ -37,9 +37,9 @@
 			<li class="current_page_item"><a href="Home Page.aspx">Home</a></li>
 			<li><a href="Sign Up Form.aspx">Sign Up</a></li>
 			<li><a href="Sign In.aspx">Sign In</a></li>
-			<li><a href="#">About</a></li>
-			<li><a href="#">Links</a></li>
-			<li><a href="#">Contact</a></li>
+			<li><a href="Update.aspx">Update</a></li>
+			<li><a href="Live.aspx">Live</a></li>
+			<li><a href="History.aspx">History</a></li>
 		</ul>
 	</div>
  <div class="container">

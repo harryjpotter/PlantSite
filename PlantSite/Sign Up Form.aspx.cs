@@ -25,7 +25,7 @@ namespace PlantSite
                 SqlConnection connection = new SqlConnection(DatabaseConnection.ConnectionString);
                 connection.Open();
                 SqlCommand command = connection.CreateCommand();
-                /*command.CommandText = String.Format("INSERT INTO Users (FullName, Username, Password, Email, Phone) OUTPUT Inserted.Id VALUES ('{0}', '{1}', '{2}', '{3}', '{4}');", fullName, Username, Password, Email, Phone);
+                command.CommandText = String.Format("INSERT INTO Users (FullName, Username, Password, Email, Phone) OUTPUT Inserted.Id VALUES ('{0}', '{1}', '{2}', '{3}', '{4}');", fullName, Username, Password, Email, Phone);
                 try
                 {
                     int id = (int)command.ExecuteScalar();
@@ -36,9 +36,9 @@ namespace PlantSite
                 catch (SqlException)
                 {
                     errorMessage = "*Username already exists";
-                }*/
+                }
 
-                command.CommandText = "DELETE FROM Users WHERE Id=13";
+                //command.CommandText = "DELETE FROM Users WHERE Id=13";
                 command.ExecuteNonQuery();
                 connection.Close();
 
