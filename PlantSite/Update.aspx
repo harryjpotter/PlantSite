@@ -48,70 +48,70 @@
  <div class="container">
     <form id="Update" runat="server">
         <h1 > Changing Nominal Data </h1> <br/>
-         TempUpMax
+         TempUpMax:
             <br/> <br/>
             <div class="form-group">
-            <input class="form-control" placeholder="Enter TempUpMax" type="text" name="TempUpMax" id="TempUpMax" /> <br/> <br/>
+            <input class="form-control" placeholder="Enter new TempUpMax" type="text" name="TempUpMax" id="TempUpMax" /> <br/> <br/>
              </div>
-        TempUpMin
+        TempUpMin:
             <br/> <br/>
             <div class="form-group">
-            <input class="form-control" placeholder="Enter TempUpMin" type="text" name="TempUpMin" id="TempUpMin" /> <br/> <br/>
+            <input class="form-control" placeholder="Enter new TempUpMin" type="text" name="TempUpMin" id="TempUpMin" /> <br/> <br/>
              </div>
-        TempDownMax
+        TempDownMax:
             <br/> <br/>
             <div class="form-group">
-            <input class="form-control" placeholder="Enter TempDownMax" type="text" name="TempDownMax" id="TempDownMax" /> <br/> <br/>
+            <input class="form-control" placeholder="Enter new TempDownMax" type="text" name="TempDownMax" id="TempDownMax" /> <br/> <br/>
              </div>
-        TempDownMin
+        TempDownMin:
             <br/> <br/>
             <div class="form-group">
-            <input class="form-control" placeholder="Enter TempDownMin" type="text" name="TempDownMin" id="TempDownMin" /> <br/> <br/>
+            <input class="form-control" placeholder="Enter new TempDownMin" type="text" name="TempDownMin" id="TempDownMin" /> <br/> <br/>
              </div>
-        HuUpMax
+        HuUpMax:
             <br/> <br/>
             <div class="form-group">
-            <input class="form-control" placeholder="Enter HuUpMax" type="text" name="HuUpMax" id="HuUpMax" /> <br/> <br/>
+            <input class="form-control" placeholder="Enter new HuUpMax" type="text" name="HuUpMax" id="HuUpMax" /> <br/> <br/>
              </div>
-        HuUpMin
+        HuUpMin:
             <br/> <br/>
             <div class="form-group">
-            <input class="form-control" placeholder="Enter HuUpMin" type="text" name="HuUpMin" id="HuUpMin" /> <br/> <br/>
+            <input class="form-control" placeholder="Enter new HuUpMin" type="text" name="HuUpMin" id="HuUpMin" /> <br/> <br/>
              </div>
-        HuDownMax
+        HuDownMax:
             <br/> <br/>
             <div class="form-group">
-            <input class="form-control" placeholder="Enter HuDownMax" type="text" name="HuDownMax" id="HuDownMax" /> <br/> <br/>
+            <input class="form-control" placeholder="Enter new HuDownMax" type="text" name="HuDownMax" id="HuDownMax" /> <br/> <br/>
              </div>
-        HuDownMin
+        HuDownMin:
             <br/> <br/>
             <div class="form-group">
-            <input class="form-control" placeholder="Enter HuDownMin" type="text" name="HuDownMin" id="HuDownMin" /> <br/> <br/>
+            <input class="form-control" placeholder="Enter new HuDownMin" type="text" name="HuDownMin" id="HuDownMin" /> <br/> <br/>
              </div>
-        pHMax
+        pHMax:
             <br/> <br/>
             <div class="form-group">
-            <input class="form-control" placeholder="Enter pHMax" type="text" name="pHMax" id="pHMax" /> <br/> <br/>
+            <input class="form-control" placeholder="Enter new pHMax" type="text" name="pHMax" id="pHMax" /> <br/> <br/>
              </div>
-        pHMin
+        pHMin:
             <br/> <br/>
             <div class="form-group">
-            <input class="form-control" placeholder="Enter pHMin" type="text" name="pHMin" id="pHMin" /> <br/> <br/>
+            <input class="form-control" placeholder="Enter new pHMin" type="text" name="pHMin" id="pHMin" /> <br/> <br/>
              </div>
-        ECMax
+        ECMax:
             <br/> <br/>
             <div class="form-group">
-            <input class="form-control" placeholder="Enter ECMax" type="text" name="ECMax" id="ECMax" /> <br/> <br/>
+            <input class="form-control" placeholder="Enter new ECMax" type="text" name="ECMax" id="ECMax" /> <br/> <br/>
              </div>
-        ECMin
+        ECMin:
             <br/> <br/>
             <div class="form-group">
-            <input class="form-control" placeholder="Enter ECMin" type="text" name="ECMin" id="ECMin" /> <br/> <br/>
+            <input class="form-control" placeholder="Enter New ECMin" type="text" name="ECMin" id="ECMin" /> <br/> <br/>
              </div>
-        PumpMin
+        PumpMin:
             <br/> <br/>
             <div class="form-group">
-            <input class="form-control" placeholder="Enter PumpMin" type="text" name="PumpMin" id="PumpMin" /> <br/> <br/>
+            <input class="form-control" placeholder="Enter New PumpMin" type="text" name="PumpMin" id="PumpMin" /> <br/> <br/>
              </div>
         <input type="submit" class="btn btn-primary" id="submit" value="Change Nominal Data" /> <br/>
     </form>
