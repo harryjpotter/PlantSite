@@ -37,8 +37,7 @@ namespace PlantSite
                 {
                     errorMessage = "*Username already exists";
                 }
-
-                //command.CommandText = "DELETE FROM Users WHERE Id=13";
+                //command.CommandText = "DELETE FROM Users WHERE Id=30";
                 command.ExecuteNonQuery();
                 connection.Close();
 

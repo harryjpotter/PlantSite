@@ -23,8 +23,6 @@
 <link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
 
-<script src="Main.js"></script>
-
    </head>
 <body>
     <div id="wrapper">
@@ -46,7 +44,7 @@
 	</div>
 	<!-- end #menu -->
  <div class="container">
-    <form id="Update" runat="server">
+    <form id="Update" runat="server" action="Update.aspx">
         <h1 > Changing Nominal Data </h1> <br/>
          TempUpMax:
             <br/> <br/>
