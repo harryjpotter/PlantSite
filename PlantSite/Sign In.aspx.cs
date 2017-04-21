@@ -31,7 +31,6 @@ namespace PlantSite
                 {
                     if (reader.GetString(3) == Password)
                     {
-                        message = "Success!";
                         Session["id"] = reader.GetInt32(0);
                         Session["name"] = reader.GetString(1);
                         Response.Redirect("Home Page.aspx");

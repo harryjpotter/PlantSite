@@ -52,10 +52,9 @@
              Enter Password
             </div>
             <div class="form-group">
-            <input class="form-control" placeholder="Enter your password" type="text" name="password" id="password"/>
-            <br/>
+            <input class="form-control" placeholder="Enter your password" type="password" name="password" id="password"/>
             </div>
-        <%=message%>
+        <big> <%=message%> </big>
         <br /> <input type="submit" class="btn btn-primary" id="submit" value="sign in" /> <br /> <br />
         <a href="Sign Up Form.aspx">Don't have an account yet? Sign up</a>
     </form>
