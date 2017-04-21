@@ -56,7 +56,8 @@
             <br/>
             </div>
         <%=message%>
-        <br /> <input type="submit" class="btn btn-primary" id="submit" value="sign in" /> <br />
+        <br /> <input type="submit" class="btn btn-primary" id="submit" value="sign in" /> <br /> <br />
+        <a href="Sign Up Form.aspx">Don't have an account yet? Sign up</a>
     </form>
 	</div>
 </div>

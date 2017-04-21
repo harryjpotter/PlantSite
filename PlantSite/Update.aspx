@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Sign Up Form.aspx.cs" Inherits="PlantSite.Sign_Up_Form" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Update.aspx.cs" Inherits="PlantSite.Update" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -46,7 +46,7 @@
  <div class="container">
     <form id="Update" runat="server" action="Update.aspx">
         <h1 > Changing Nominal Data </h1> <br/>
-         TempUpMax:
+         TempUpMax: <%=TempUpMax %>
             <br/> <br/>
             <div class="form-group">
             <input class="form-control" placeholder="Enter new TempUpMax" type="text" name="TempUpMax" id="TempUpMax" /> <br/> <br/>

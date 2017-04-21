@@ -13,6 +13,10 @@ namespace PlantSite
         public string message = "";
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["id"] != null)
+            {
+                message = "You are still logged in";
+            }
             if (Request.HttpMethod == "POST")
             {
                 string Username = Request.Form["Username"];
