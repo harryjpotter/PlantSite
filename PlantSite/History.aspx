@@ -49,7 +49,7 @@
     <form id="signup" runat="server" onsubmit="return verify()">
         <h1 > History </h1> <br/>
          <b><h3><%=CurrDataColumns%> </h3></b>
-        <h4><%=CurrDataTable %> </h4>
+        <h3><%=CurrDataTable %> </h3>
     </form>
 	</div>
 </div>

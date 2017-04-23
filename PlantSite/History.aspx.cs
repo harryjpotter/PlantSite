@@ -40,6 +40,7 @@ namespace PlantSite
 
         private static string PrintTablesData(SqlDataReader reader)
         {
+            //System.Diagnostics.Debug.WriteLine("1");
             string currDataData = "";
             int columnCount = reader.FieldCount;
             // Print Header (Data Names)
@@ -48,12 +49,13 @@ namespace PlantSite
                 for (int i = 0; i < columnCount; i++)
                 {
                     // reader.GetValue(i) gets the value of the ith column in the current row
-                    // I use GetValue instead of GetString or GetInt32 because I don't know what the datatype is and I just want to print it.
                     currDataData += reader.GetValue(i).ToString() + "           ";
+                    //System.Diagnostics.Debug.WriteLine("2");
                 }
-                currDataData += "<br/";
+                //System.Diagnostics.Debug.WriteLine("3");
+                currDataData += "<br/>";
             }
-
+            //System.Diagnostics.Debug.WriteLine(currDataData);
             return currDataData;
         }
         }
