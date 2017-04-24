@@ -431,3 +431,13 @@ img.aligncenter {
 .list-style1 .first {
 	border-top: none;
 }
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+Try it Yourself »
+

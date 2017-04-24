@@ -13,12 +13,12 @@ namespace PlantSite {
     public partial class Sign_Up_Form {
         
         /// <summary>
-        /// Update control.
+        /// signup control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm Update;
+        protected global::System.Web.UI.HtmlControls.HtmlForm signup;
     }
 }

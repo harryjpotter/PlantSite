@@ -29,7 +29,7 @@
    <div id="wrapper">
 	<div id="header">
 		<div id="logo">
-			<h1><a href="#">The Plant Site</a> / <span>by Naama & Rotem</span></h1>
+			<h1><a href="Home Page.aspx">The Plant Site</a> / <span>by Naama & Rotem</span></h1>
 		</div>
 	</div>
 	<!-- end #header -->

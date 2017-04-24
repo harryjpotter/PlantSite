@@ -19,43 +19,36 @@ namespace PlantSite
             command.CommandText = string.Format("SELECT * FROM CurrData");
             using (SqlDataReader reader = command.ExecuteReader())
             {
-                CurrDataColumns = PrintTablesColumns(reader);
                 CurrDataTable = PrintTablesData(reader);
             }
 
         }
-        private static string PrintTablesColumns(SqlDataReader reader)
+        private static string PrintTablesData(SqlDataReader reader)
         {
-            string currDataColumns = "";
-
+            //System.Diagnostics.Debug.WriteLine("1");
+            string currDataData = "<table> <tr>";
             int columnCount = reader.FieldCount;
+            // Print Header (Data Names)
             // Print Header (Column names)
             for (int i = 0; i < columnCount; i++)
             {
                 // reader.GetName(i) gets the name of the ith coulmn
-                currDataColumns += reader.GetName(i) + "           ";
+                currDataData += "<th>" + reader.GetName(i) + "</th>";
             }
-            return currDataColumns;
-        }
-
-        private static string PrintTablesData(SqlDataReader reader)
-        {
-            //System.Diagnostics.Debug.WriteLine("1");
-            string currDataData = "";
-            int columnCount = reader.FieldCount;
-            // Print Header (Data Names)
+            currDataData += "</tr>";
             while (reader.Read()) // Read next row, stop if no more rows
             {
                 for (int i = 0; i < columnCount; i++)
                 {
                     // reader.GetValue(i) gets the value of the ith column in the current row
-                    currDataData += reader.GetValue(i).ToString() + "           ";
+                    currDataData += "<td>" + reader.GetValue(i).ToString() + "</td>";
                     //System.Diagnostics.Debug.WriteLine("2");
                 }
                 //System.Diagnostics.Debug.WriteLine("3");
-                currDataData += "<br/>";
+                currDataData += "</tr>" + "<tr>";
             }
             //System.Diagnostics.Debug.WriteLine(currDataData);
+            currDataData += "</tr>" + "</table";
             return currDataData;
         }
         }
