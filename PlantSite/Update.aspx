@@ -26,23 +26,6 @@
 <script>
 
     function verify() {
-        var a = is_TempUpMax();
-        var b = is_TempUpMin();
-        var c = is_TempDownMax();
-        var d = is_TempDownMin();
-        var e = is_HuUpMax();
-        var f = is_HuUpMin();
-        var g = is_HuDownMax();
-        var h = is_HuDownMin();
-        var i = is_pHMax();
-        var k = is_pHMin();
-        var l = is_ECMax();
-        var m = is_ECMin();
-        var n = is_PumpMin();
-
-        alert("HI");
-        alert("1: " + a + ", 2: " + b + ", 3: " + c + ", 4: " + d + ", 5: " + e + ", 6: " + f + ", 7: " + g + ", 8: " + h + ", 9: " + i + ", 10: " + k + ", 11: " + l + ", 12: " + m + ",13: " + n);
-
         if (
             is_TempUpMax()
             && is_TempUpMin()
@@ -67,7 +50,6 @@
             return false;
         }
     }
-
 
     function is_TempUpMax() {
         var TempUpMax = document.getElementById("TempUpMax").value;
@@ -112,27 +94,28 @@
     function is_pHMax() {
         var pHMax = document.getElementById("pHMax").value;
         //alert("9 : " + (/^\d+$/.test(pHMax) || pHMax == ""));
-        return (/^\d+$/.test(pHMax) || pHMax == "");
+        return (/\d{1,2}[,.]\d{1,2}/.test(pHMax) || pHMax == "");
+        
     }
     function is_pHMin() {
         var pHMin = document.getElementById("pHMin").value;
         //alert("10 : " + (/^\d+$/.test(pHMin) || pHMin == ""));
-        return (/^\d+$/.test(pHMin) || pHMin == "");
+        return (/\d{1,2}[,.]\d{1,2}/.test(pHMin) || pHMin == "");
     }
     function is_ECMax() {
         var ECMax = document.getElementById("ECMax").value;
         //alert("11 : " + (/^\d+$/.test(ECMaxe) || ECMaxe == ""));
-        return (/^\d+$/.test(ECMaxe) || ECMax == "");
+        return (/\d{1,2}[,.]\d{1,2}/.test(ECMax) || ECMax == "");
     }
     function is_ECMin() {
         var ECMin = document.getElementById("ECMin").value;
         //alert("12 : " + (/^\d+$/.test(ECMin) || ECMin == ""));
-        return (/^\d+$/.test(ECMin) || ECMin == "");
+        return (/\d{1,2}[,.]\d{1,2}/.test(ECMin) || ECMin == "");
     }
     function is_PumpMin() {
         var PumpMin = document.getElementById("PumpMin").value;
         //alert("13 : " + (/^\d+$/.test(PumpMin) || PumpMin == ""));
-        return ((PumpMin) || PumpMin == "");
+        return (/\d{1,2}[,.]\d{1,2}/.test(PumpMin) || PumpMin == "");
     }
 </script>   
 </head>
