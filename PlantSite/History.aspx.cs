@@ -10,9 +10,14 @@ namespace PlantSite
 {
     public partial class History : System.Web.UI.Page
     {
-        public string CurrDataColumns, CurrDataTable;
+        public string CurrDataTable;
+        public string str = "";
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["id"] != null)
+            {
+                str = "Sign Out";
+            }
             SqlConnection connection = new SqlConnection(DatabaseConnection.ConnectionString);
             connection.Open();
             SqlCommand command = connection.CreateCommand();

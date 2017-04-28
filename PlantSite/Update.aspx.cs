@@ -10,6 +10,7 @@ namespace PlantSite
 {
     public partial class Update : System.Web.UI.Page
     {
+        public string str = "";
         //get the data that is in the database
         public int TempUpMax, TempUpMin, TempDownMax, TempDownMin, HuUpMax, HuUpMin, HuDownMax, HuDownMin;
         public float pHMax, pHMin, ECMax, ECMin, PumpMin;
@@ -22,6 +23,7 @@ namespace PlantSite
             connection.Open();
             SqlCommand command = connection.CreateCommand();
             command.CommandText = string.Format("SELECT * FROM NominalData;");
+            //System.Diagnostics.Debug.WriteLine("");
             using (SqlDataReader reader = command.ExecuteReader())
             {
                 if (reader.Read())
@@ -39,8 +41,10 @@ namespace PlantSite
                     ECMax = reader.GetFloat(10);
                     ECMin = reader.GetFloat(11);
                     PumpMin = reader.GetFloat(12);
+
                 }
             }
+            //System.Diagnostics.Debug.WriteLine("info: {0} ",TempUpMax);
 
             if (Session["id"] == null)
             {
@@ -48,6 +52,7 @@ namespace PlantSite
             }
             else
             {
+                str = "Sign Out";
                 if (Request.HttpMethod == "POST")
                 {
                     // Insert the data
@@ -66,19 +71,19 @@ namespace PlantSite
                     PumpMinInput = Request.Form["PumpMin"];
 
                     //updating the data
-                    if (updateInt(TempUpMaxInput))
+                    if (CheckNotNull(TempUpMaxInput))
                         TempUpMax = int.Parse(TempUpMaxInput);
 
-                    command.CommandText = "UPDATE NominalData SET TempUpMax=TempUpMax;";
+                    //command.CommandText = string.Format("UPDATE NominalData SET TempUpMax= {0};", TempUpMax);
                     //command.CommandText = "INSERT INTO NominalData VALUES (30, 15, 25, 15, 100, 50, 80, 50, 6.5, 5.5, 1.5, 0.7, 50);";
-                    //command.CommandText = string.Format("UPDATE NominalData SET TempUpMax={0}, TempUpMin={1}, TempDownMax={2}, TempDownMin={3}, HuUpMax={4}, HuUpMin={5}, HuDownMax={6}, HuDownMin={7}, pHMax={8}, pHMin={9}, ECMax={10}, ECMin={11}, PumpMin={12};", TempUpMax, TempUpMin, TempDownMax, TempDownMin, HuUpMax, HuUpMin, HuDownMax, HuDownMin, pHMax, pHMin, ECMax, ECMin, PumpMin);
+                    command.CommandText = string.Format("UPDATE NominalData SET TempUpMax={0}, TempUpMin={1}, TempDownMax={2}, TempDownMin={3}, HuUpMax={4}, HuUpMin={5}, HuDownMax={6}, HuDownMin={7}, pHMax={8}, pHMin={9}, ECMax={10}, ECMin={11}, PumpMin={12};", TempUpMax, TempUpMin, TempDownMax, TempDownMin, HuUpMax, HuUpMin, HuDownMax, HuDownMin, pHMax, pHMin, ECMax, ECMin, PumpMin);
                     command.ExecuteNonQuery();
                 }
             }
             connection.Close();
         }
 
-        private bool updateInt(string str)
+        private bool CheckNotNull(string str)
         {
             if(str == null)
             {
@@ -86,14 +91,5 @@ namespace PlantSite
             }
             return true;
         }
-        private bool updateFloat(string str)
-        {
-            if (str == null)
-            {
-                return false;
-            }
-            return true;
-        }
-
     }
 }

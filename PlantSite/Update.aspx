@@ -19,16 +19,128 @@
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>The Plant Site</title>
+<title>The Flying Tomato</title>
 <link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
 
-   </head>
+<script>
+
+    function verify() {
+        var a = is_TempUpMax();
+        var b = is_TempUpMin();
+        var c = is_TempDownMax();
+        var d = is_TempDownMin();
+        var e = is_HuUpMax();
+        var f = is_HuUpMin();
+        var g = is_HuDownMax();
+        var h = is_HuDownMin();
+        var i = is_pHMax();
+        var k = is_pHMin();
+        var l = is_ECMax();
+        var m = is_ECMin();
+        var n = is_PumpMin();
+
+        alert("HI");
+        alert("1: " + a + ", 2: " + b + ", 3: " + c + ", 4: " + d + ", 5: " + e + ", 6: " + f + ", 7: " + g + ", 8: " + h + ", 9: " + i + ", 10: " + k + ", 11: " + l + ", 12: " + m + ",13: " + n);
+
+        if (
+            is_TempUpMax()
+            && is_TempUpMin()
+            && is_TempDownMax()
+            && is_TempDownMin()
+            && is_HuUpMax()
+            && is_HuUpMin()
+            && is_HuDownMax()
+            && is_HuDownMin()
+            && is_pHMax()
+            && is_pHMin()
+            && is_ECMax()
+            && is_ECMin()
+            && is_PumpMin()
+            ) {
+            alert("The nominal data have changed");
+            return true;
+        }
+
+        else {
+            alert("check the data again !");
+            return false;
+        }
+    }
+
+
+    function is_TempUpMax() {
+        var TempUpMax = document.getElementById("TempUpMax").value;
+        //alert("1 : " + (/^\d+$/.test(TempUpMax) || TempUpMax == ""));
+        return (/^\d+$/.test(TempUpMax) || TempUpMax == "");
+    }
+    function is_TempUpMin() {
+        var TempUpMin = document.getElementById("TempUpMin").value;
+        //alert("2 : " + (/^\d+$/.test(TempUpMin) || TempUpMin == ""));
+        return (/^\d+$/.test(TempUpMin) || TempUpMin == "");
+    }
+    function is_TempDownMax() {
+        var TempDownMax = document.getElementById("TempDownMax").value;
+        //alert("3 : " + (/^\d+$/.test(TempDownMax) || TempDownMax == ""));
+        return (/^\d+$/.test(TempDownMax) || TempDownMax == "");
+    }
+    function is_TempDownMin() {
+        var TempDownMin = document.getElementById("TempDownMin").value;
+        //alert("4 : " + (/^\d+$/.test(TempDownMin) || TempDownMin == ""));
+        return (/^\d+$/.test(TempDownMin) || TempDownMin == "");
+    }
+    function is_HuUpMax() {
+        var HuUpMax = document.getElementById("HuUpMax").value;
+        //alert("5 : " + (/^\d+$/.test(HuUpMax) || HuUpMax == ""));
+        return (/^\d+$/.test(HuUpMax) || HuUpMax == "");
+    }
+    function is_HuUpMin() {
+        var HuUpMin = document.getElementById("HuUpMin").value;
+        //alert("6 : " + (/^\d+$/.test(HuUpMin) || HuUpMin == ""));
+        return (/^\d+$/.test(HuUpMin) || HuUpMin == "");
+    }
+    function is_HuDownMax() {
+        var HuDownMax = document.getElementById("HuDownMax").value;
+        //alert("7 : " + (/^\d+$/.test(HuDownMax) || HuDownMax == ""));
+        return (/^\d+$/.test(HuDownMax) || HuDownMax == "");
+    }
+    function is_HuDownMin() {
+        var HuDownMin = document.getElementById("HuDownMin").value;
+        //alert("8 : " + (/^\d+$/.test(HuDownMin) || HuDownMin == ""));
+        return (/^\d+$/.test(HuDownMin) || HuDownMin == "");
+    }
+    function is_pHMax() {
+        var pHMax = document.getElementById("pHMax").value;
+        //alert("9 : " + (/^\d+$/.test(pHMax) || pHMax == ""));
+        return (/^\d+$/.test(pHMax) || pHMax == "");
+    }
+    function is_pHMin() {
+        var pHMin = document.getElementById("pHMin").value;
+        //alert("10 : " + (/^\d+$/.test(pHMin) || pHMin == ""));
+        return (/^\d+$/.test(pHMin) || pHMin == "");
+    }
+    function is_ECMax() {
+        var ECMax = document.getElementById("ECMax").value;
+        //alert("11 : " + (/^\d+$/.test(ECMaxe) || ECMaxe == ""));
+        return (/^\d+$/.test(ECMaxe) || ECMax == "");
+    }
+    function is_ECMin() {
+        var ECMin = document.getElementById("ECMin").value;
+        //alert("12 : " + (/^\d+$/.test(ECMin) || ECMin == ""));
+        return (/^\d+$/.test(ECMin) || ECMin == "");
+    }
+    function is_PumpMin() {
+        var PumpMin = document.getElementById("PumpMin").value;
+        //alert("13 : " + (/^\d+$/.test(PumpMin) || PumpMin == ""));
+        return ((PumpMin) || PumpMin == "");
+    }
+</script>   
+</head>
 <body>
     <div id="wrapper">
 	<div id="header">
 		<div id="logo">
-			<h1><a href="Home Page.aspx">The Plant Site</a> / <span>by Naama & Rotem</span></h1>
+			<h1><a href="Home Page.aspx">The Flying Tomato</a> / <span>by Naama & Rotem</span></h1>
 		</div>
 	</div>
 	<!-- end #header -->
@@ -38,13 +150,13 @@
 			<li><a href="Sign Up Form.aspx">Sign Up</a></li>
 			<li><a href="Sign In.aspx">Sign In</a></li>
 			<li><a href="Update.aspx">Update</a></li>
-			<li><a href="Live.aspx">Live</a></li>
-			<li><a href="History.aspx">History</a></li>
+            <li><a href="History.aspx">History</a></li>
+			<li><a href="Sign Out.aspx"><%=str %></a></li>
 		</ul>
 	</div>
 	<!-- end #menu -->
  <div class="container">
-    <form id="Update" runat="server" action="Update.aspx">
+    <form id="Update" runat="server" onsubmit="return verify()">
         <h1 > Changing Nominal Data </h1> <br/>
          TempUpMax:
             <br/> <br/>

@@ -11,11 +11,13 @@ namespace PlantSite
     public partial class Sign_In : System.Web.UI.Page
     {
         public string message = "";
+        public string str = "";
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["id"] != null)
             {
                 message = "You are still logged in";
+                str = "Sign Out";
             }
             if (Request.HttpMethod == "POST")
             {

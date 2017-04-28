@@ -19,7 +19,7 @@
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>The Plant Site</title>
+<title>The Flying Tomato</title>
 <link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
 
@@ -29,7 +29,7 @@
    <div id="wrapper">
 	<div id="header">
 		<div id="logo">
-			<h1><a href="Home Page.aspx">The Plant Site</a> / <span>by Naama & Rotem</span></h1>
+			<h1><a href="Home Page.aspx">The Flying Tomato</a> / <span>by Naama & Rotem</span></h1>
 		</div>
 	</div>
 	<!-- end #header -->
@@ -39,25 +39,25 @@
 			<li><a href="Sign Up Form.aspx">Sign Up</a></li>
 			<li><a href="Sign In.aspx">Sign In</a></li>
 			<li><a href="Update.aspx">Update</a></li>
-			<li><a href="Live.aspx">Live</a></li>
-			<li><a href="History.aspx">History</a></li>
+            <li><a href="History.aspx">History</a></li>
+			<li><a href="Sign Out.aspx"><%=str %></a></li>
 		</ul>
 	</div>
 	<!-- end #menu -->
 	<div id="page">
 		<div class="post">
-			<h2 class="title">Praesent scelerisque scelerisque</h2>
-			<p><img src="images/pics01.jpg" width="820" height="250" alt="" /></p>
-			<p>This is <strong>Flamingo</strong>, a free, fully standards-compliant CSS template by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>. The picture in this template is from <a href="http://fotogrph.com/">Fotogrph</a>. This free template is released under the <a href="http://templated.co/license">Creative Commons Attribution</a> license, so you're pretty much free to do whatever you want with it (even use it commercially) provided you give us credit for it. Have fun :) </p>
+			<h2 class="title">About the project</h2>
+			<p><img src="images/pic1.jpg" width="820" height="250" alt="" /></p>
+			<p>We major in Engineering Science and that's why we did this project- "The Flying Tomato". The Flying Tomato is a tracking and monitoring device designed for growing aerophonic plants in laboratory conditions. The device is divided to 2 parts: the upper part and the bottom part. You can track and control many parameters including, inter alia,  tempreture, pH of the water, humidity and etc.</p>
 		</div>
 	</div>
 	<div id="about">
-		<h2 class="title">Amet mattis fringilla nisl</h2>
-		<p><em><img src="images/pics02.jpg" alt="" width="250" height="172" class="alignleft" /></em>Libero rutrum felis dignissim accumsan cum at purus. Nisi lacinia duis dignissim purus. Cubilia mollis scelerisque a faucibus orci congue. Faucibus tristique elit varius nibh tristique lectus lorem. Donec risus mi egestas ultricies. Velit enim diam id magna hendrerit. Augue massa odio tempus. Metus nisl purus semper massa viverra. Auctor tincidunt dignissim montes duis integer faucibus. Eget felis nascetur magnis magnis ultricies velit. Libero rutrum felis dignissim accumsan cum at purus. Donec risus mi egestas ultricies. </p>
+		<h2 class="title">About us</h2>
+		<p><em><img src="images/pic2.jpg" alt="" width="250" height="172" class="alignleft" /></em>
+        We are Naama and Rotem, we are 18 years old, we study in Handessaim high school in Herzelia. We are very good friends and we wanted to do this project together. We chose this specific project because it combines our passions for programming and biology. With the help and guidance of our mentor we decided to focus on a tracking device for plants.</p>
 	</div>
 </div>
 <div id="footer">
-	<p>&copy; Untitled. All rights reserved. Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>. Photos by <a href="http://fotogrph.com/">fotogrph</a>.</p>
 </div>
 <!-- end #footer -->
         </form>

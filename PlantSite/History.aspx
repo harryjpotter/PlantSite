@@ -19,7 +19,7 @@
 <meta name="keywords" content="" />
 <meta name="description" content="" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>The Plant Site</title>
+<title>The Flying Tomato</title>
 <link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
 
@@ -30,7 +30,7 @@
     <div id="wrapper">
 	<div id="header">
 		<div id="logo">
-			<h1><a href="Home Page.aspx">The Plant Site</a> / <span>by Naama & Rotem</span></h1>
+			<h1><a href="Home Page.aspx">The Flying Tomato</a> / <span>by Naama & Rotem</span></h1>
 		</div>
 	</div>
 	<!-- end #header -->
@@ -40,8 +40,8 @@
 			<li><a href="Sign Up Form.aspx">Sign Up</a></li>
 			<li><a href="Sign In.aspx">Sign In</a></li>
 			<li><a href="Update.aspx">Update</a></li>
-			<li><a href="Live.aspx">Live</a></li>
-			<li><a href="History.aspx">History</a></li>
+            <li><a href="History.aspx">History</a></li>
+			<li><a href="Sign Out.aspx"><%=str %></a></li>
 		</ul>
 	</div>
 	<!-- end #menu -->

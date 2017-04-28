@@ -11,8 +11,13 @@ namespace PlantSite
     public partial class Sign_Up_Form : System.Web.UI.Page
     {
         public string errorMessage = "";
+        public string str = "";
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["id"] != null)
+            {
+                str = "Sign Out";
+            }
             if (Request.HttpMethod == "POST")
             {
                 // Insert the data

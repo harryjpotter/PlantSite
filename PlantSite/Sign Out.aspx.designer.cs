@@ -11,7 +11,7 @@ namespace PlantSite
 {
 
 
-    public partial class Live
+    public partial class Sign_Out
     {
 
         /// <summary>
