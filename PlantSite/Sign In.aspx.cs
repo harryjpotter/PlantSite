@@ -14,7 +14,7 @@ namespace PlantSite
         public string str = "";
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["id"] != null)
+            if (Session["name"] != null)
             {
                 message = "You are still logged in";
                 str = "Sign Out";
@@ -32,8 +32,7 @@ namespace PlantSite
                 if (reader.Read())
                 {
                     if (reader.GetString(3) == Password)
-                    {
-                        Session["id"] = reader.GetInt32(0);
+                   {
                         Session["name"] = reader.GetString(1);
                         Response.Redirect("Home Page.aspx");
                     }

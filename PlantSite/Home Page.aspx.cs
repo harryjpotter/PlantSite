@@ -13,7 +13,7 @@ namespace PlantSite
         public string str = "";
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["id"] != null)
+            if (Session["name"] != null)
             {
                 str = "Sign Out";
             }

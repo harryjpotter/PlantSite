@@ -48,13 +48,13 @@
 		<div class="post">
 			<h2 class="title">About the project</h2>
 			<p><img src="images/pic1.jpg" width="820" height="250" alt="" /></p>
-			<p>We major in Engineering Science and that's why we did this project- "The Flying Tomato". The Flying Tomato is a tracking and monitoring device designed for growing aerophonic plants in laboratory conditions. The device is divided to 2 parts: the upper part and the bottom part. You can track and control many parameters including, inter alia,  tempreture, pH of the water, humidity and etc.</p>
+			<p>We major in Engineering Science which is why we did this project- "The Flying Tomato". The Flying Tomato is a tracking and monitoring system designed for growing aerophonic plants in laboratory conditions. The system comprises from 2 parts: the upper part and the lower part. One can track and control many parameters including, tempreture, pH of the water, humidity etc.</p>
 		</div>
 	</div>
 	<div id="about">
 		<h2 class="title">About us</h2>
 		<p><em><img src="images/pic2.jpg" alt="" width="250" height="172" class="alignleft" /></em>
-        We are Naama and Rotem, we are 18 years old, we study in Handessaim high school in Herzelia. We are very good friends and we wanted to do this project together. We chose this specific project because it combines our passions for programming and biology. With the help and guidance of our mentor we decided to focus on a tracking device for plants.</p>
+        We are Naama and Rotem, we are 18 years old, we study in Handessaim High School in Herzelia. We are very good friends and we wanted to do this project together. We chose this specific project because it combines our passion for programming and biology. With the help and guidance of our mentor we decided to focus on a tracking device for plants.</p>
 	</div>
 </div>
 <div id="footer">

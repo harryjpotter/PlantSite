@@ -23,7 +23,9 @@
 <link href="http://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css" />
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
 
-<script src="Main.js"></script>
+<script src="Main.js"> </script>
+
+<%=tomer %>
 
    </head>
 <body>

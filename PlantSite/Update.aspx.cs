@@ -23,7 +23,6 @@ namespace PlantSite
             connection.Open();
             SqlCommand command = connection.CreateCommand();
             command.CommandText = string.Format("SELECT * FROM NominalData;");
-            //System.Diagnostics.Debug.WriteLine("");
             using (SqlDataReader reader = command.ExecuteReader())
             {
                 if (reader.Read())
@@ -44,9 +43,8 @@ namespace PlantSite
 
                 }
             }
-            //System.Diagnostics.Debug.WriteLine("info: {0} ",TempUpMax);
 
-            if (Session["id"] == null)
+            if (Session["name"] == null)
             {
                 Response.Redirect("Sign In.aspx");
             }

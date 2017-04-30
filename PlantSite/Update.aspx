@@ -93,28 +93,28 @@
     }
     function is_pHMax() {
         var pHMax = document.getElementById("pHMax").value;
-        //alert("9 : " + (/^\d+$/.test(pHMax) || pHMax == ""));
+        //alert("9 : " + (/\d{1,2}[,.]\d{1,2}/.test(pHMax) || pHMax == ""));
         return (/\d{1,2}[,.]\d{1,2}/.test(pHMax) || pHMax == "");
         
     }
     function is_pHMin() {
         var pHMin = document.getElementById("pHMin").value;
-        //alert("10 : " + (/^\d+$/.test(pHMin) || pHMin == ""));
+        //alert("10 : " + (/\d{1,2}[,.]\d{1,2}/.test(pHMin) || pHMin == ""));
         return (/\d{1,2}[,.]\d{1,2}/.test(pHMin) || pHMin == "");
     }
     function is_ECMax() {
         var ECMax = document.getElementById("ECMax").value;
-        //alert("11 : " + (/^\d+$/.test(ECMaxe) || ECMaxe == ""));
+        //alert("11 : " + (/\d{1,2}[,.]\d{1,2}/.test(ECMax) || ECMax == ""));
         return (/\d{1,2}[,.]\d{1,2}/.test(ECMax) || ECMax == "");
     }
     function is_ECMin() {
         var ECMin = document.getElementById("ECMin").value;
-        //alert("12 : " + (/^\d+$/.test(ECMin) || ECMin == ""));
+        //alert("12 : " + (/\d{1,2}[,.]\d{1,2}/.test(ECMin) || ECMin == ""));
         return (/\d{1,2}[,.]\d{1,2}/.test(ECMin) || ECMin == "");
     }
     function is_PumpMin() {
         var PumpMin = document.getElementById("PumpMin").value;
-        //alert("13 : " + (/^\d+$/.test(PumpMin) || PumpMin == ""));
+        //alert("13 : " + (/\d{1,2}[,.]\d{1,2}/.test(PumpMin) || PumpMin == ""));
         return (/\d{1,2}[,.]\d{1,2}/.test(PumpMin) || PumpMin == "");
     }
 </script>   

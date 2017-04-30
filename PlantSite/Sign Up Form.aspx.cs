@@ -12,9 +12,10 @@ namespace PlantSite
     {
         public string errorMessage = "";
         public string str = "";
+        public string tomer = "";
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["id"] != null)
+            if (Session["name"] != null)
             {
                 str = "Sign Out";
             }
@@ -26,24 +27,26 @@ namespace PlantSite
                 string Password = Request.Form["Password"];
                 string Email = Request.Form["Email"];
                 string Phone = Request.Form["Phone"];
-
+                System.Diagnostics.Debug.WriteLine("1:" + tomer + errorMessage);
                 SqlConnection connection = new SqlConnection(DatabaseConnection.ConnectionString);
                 connection.Open();
                 SqlCommand command = connection.CreateCommand();
-                command.CommandText = String.Format("INSERT INTO Users (FullName, Username, Password, Email, Phone) OUTPUT Inserted.Id VALUES ('{0}', '{1}', '{2}', '{3}', '{4}');", fullName, Username, Password, Email, Phone);
+                command.CommandText = String.Format("INSERT INTO Users (FullName, Username, Password, Email, Phone) VALUES ('{0}', '{1}', '{2}', '{3}', '{4}');", fullName, Username, Password, Email, Phone);
                 try
                 {
-                    int id = (int)command.ExecuteScalar();
-                    Session["id"] = id;
+                    command.ExecuteNonQuery();
                     Session["name"] = fullName;
-                    Response.Redirect("Home Page.aspx");
+                    tomer = "<script> alert(\"you have signed in\"); </script>";
+                    errorMessage = "";
+                    System.Diagnostics.Debug.WriteLine("2:" + tomer + errorMessage);
                 }
-                catch (SqlException)
+                catch (SqlException ex)
                 {
                     errorMessage = "*Username already exists";
+                    System.Diagnostics.Debug.WriteLine("3:" + tomer + errorMessage);
+                    System.Diagnostics.Debug.WriteLine(ex.Message);
                 }
-                //command.CommandText = "DELETE FROM Users WHERE Id=30";
-                command.ExecuteNonQuery();
+                System.Diagnostics.Debug.WriteLine("4:" + tomer + errorMessage);
                 connection.Close();
 
                 

@@ -14,7 +14,7 @@ namespace PlantSite
         public string str = "";
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["id"] != null)
+            if (Session["name"] != null)
             {
                 str = "Sign Out";
             }
@@ -30,10 +30,8 @@ namespace PlantSite
         }
         private static string PrintTablesData(SqlDataReader reader)
         {
-            //System.Diagnostics.Debug.WriteLine("1");
             string currDataData = "<table> <tr>";
             int columnCount = reader.FieldCount;
-            // Print Header (Data Names)
             // Print Header (Column names)
             for (int i = 0; i < columnCount; i++)
             {
@@ -47,9 +45,7 @@ namespace PlantSite
                 {
                     // reader.GetValue(i) gets the value of the ith column in the current row
                     currDataData += "<td>" + reader.GetValue(i).ToString() + "</td>";
-                    //System.Diagnostics.Debug.WriteLine("2");
                 }
-                //System.Diagnostics.Debug.WriteLine("3");
                 currDataData += "</tr>" + "<tr>";
             }
             //System.Diagnostics.Debug.WriteLine(currDataData);
