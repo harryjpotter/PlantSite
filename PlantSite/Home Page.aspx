@@ -40,7 +40,7 @@
 			<li><a href="Sign In.aspx">Sign In</a></li>
 			<li><a href="Update.aspx">Update</a></li>
             <li><a href="History.aspx">History</a></li>
-			<li><a href="Sign Out.aspx"><%=str %></a></li>
+			<%=str %>
 		</ul>
 	</div>
 	<!-- end #menu -->

@@ -15,7 +15,7 @@ namespace PlantSite
         {
             if (Session["name"] != null)
             {
-                str = "Sign Out";
+                str = "<li><a href=\"Sign Out.aspx\">Sign Out</a></li>";
             }
         }
     }

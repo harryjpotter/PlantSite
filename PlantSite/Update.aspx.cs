@@ -50,7 +50,7 @@ namespace PlantSite
             }
             else
             {
-                str = "Sign Out";
+                str = "<li><a href=\"Sign Out.aspx\">Sign Out</a></li>";
                 if (Request.HttpMethod == "POST")
                 {
                     // Insert the data

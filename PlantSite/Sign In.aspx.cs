@@ -17,7 +17,7 @@ namespace PlantSite
             if (Session["name"] != null)
             {
                 message = "You are still logged in";
-                str = "Sign Out";
+                str = "<li><a href=\"Sign Out.aspx\">Sign Out</a></li>";
             }
             if (Request.HttpMethod == "POST")
             {
